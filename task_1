@@ -1,0 +1,24 @@
+import time
+yearnow = time.strftime("%Y")
+yearnow = int(yearnow)
+
+print ("your name?")
+x = input()  #user`s name
+
+print ("your age?")
+y = input()  #user`s age
+y = int(y)
+z100 = yearnow + 100 - y
+print (x, "you will be 100 in the year ", z100)
+
+print ("Tell me a number between 1 and 10")
+r = input()
+r = int(r)
+def lastmessageloop():
+    e = 0
+    while e < r:
+        print (x, "you will be 100 in the year ", z100)
+        e += 1
+    
+lastmessageloop()
+    
