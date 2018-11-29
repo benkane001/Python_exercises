@@ -6,3 +6,12 @@ if int(y) == float(y):
     print ("Your number is even")
 else:
     print ("Your number is odd")
+
+# 2nd solution with the modulus operator
+x = int(input("Tell me a number \n \n"))
+y = x % 2
+
+if y == 0: 
+    print ("Your number is even")
+else:
+    print ("Your number is odd")
