@@ -1,0 +1,8 @@
+#recognize if the number is odd or even
+x = int(input("Tell me a number \n \n"))
+y = x / 2
+
+if int(y) == float(y): 
+    print ("Your number is even")
+else:
+    print ("Your number is odd")
