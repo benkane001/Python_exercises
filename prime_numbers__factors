@@ -1,0 +1,40 @@
+# Check if a number is prime. If not, list its factors
+
+import collections
+
+check_prime = [26, 39, 51, 53, 57, 79, 85, 44]
+
+# Add all factors into dictionary {number: factors,}
+factors = collections.defaultdict(list)
+
+"""
+Check if numbers are integers and greater than 2; divide numbers with all 
+divisors bigger than 1;
+Append factors into the list
+"""
+
+for num in check_prime:
+    num = int(num)
+    if num > 2:
+        for i in range(2, num):
+                if (num % i) == 0:
+                    factors[num].append(i)                      
+                else:
+                    continue
+    else:
+        continue
+
+"""
+Check if number is in "factors" list. If yes, print that it is not a prime. 
+List its factors.If not, print that it is prime.
+"""
+
+for num in check_prime:
+    num = int(num)
+    if num > 2:
+        if num in factors:
+            print("{} is not a prime number.".format(num))
+            print("{} is a factor of {}.".format(factors.get(num), num))
+        else:
+            print("{} is a prime number.".format(num))
+
